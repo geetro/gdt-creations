@@ -11,3 +11,7 @@ img {
   margin: 0 auto;
   width: 40%;
 }
+
+a:hover {
+  background-color: aqua;
+}
