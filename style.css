@@ -2,7 +2,7 @@ body {
     background: #6987ad;
   }
 
-h1 {
+h1, h2, p {
   text-align: center;
 }
 
@@ -14,4 +14,12 @@ img {
 
 a:hover {
   background-color: aqua;
+}
+
+button {
+  display:block;
+  margin: 0 auto;
+  width: 40%;
+  height: 50px;
+  border: 3px solid green;
 }
