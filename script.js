@@ -4,28 +4,19 @@ h2.textContent = "Southern Illinois Sequoia";
 document.querySelector("body").appendChild(h2);
 
 
-const myImg = document.getElementById("myImg");
-const myButton = document.getElementById("myButton");
+const myImg = document.getElementById('myImg');
+const myButton = document.getElementById('myButton');
 
-function clickAlert() {
-if (myImg.src.endsWith("./images/2_yr_sequoia.jpg")) {
-    myImg.src = "./images/dormant_sequoia.jpg";
-} else {
-    myImg.src = "./images/2_yr_sequoia.jpg";
-}
+document.querySelector("body").appendChild(myImg);
+document.querySelector("body").appendChild(myButton);
+
+function clickAlert() {  
+  if (myImg.src.endsWith("2_yr_sequoia.jpg")) {
+      myImg.src = "./images/dormant_sequoia.jpg";
+      alert('This is a 2 year old sequoia!');
+  } else {
+      myImg.src = "./images/2_yr_sequoia.jpg";
+      alert('This is a domant 2 year old sequoia!');
+  }
 }
 myButton.addEventListener('click', clickAlert);
-
-
-/*
-// JavaScript code
-const myImg = document.getElementById("myImg");
-const myButton = document.getElementById("myButton");
-
-myButton.addEventListener("click", function() {
-  if (myImg.src.endsWith("image1.jpg")) {
-    myImg.src = "image2.jpg";
-  } else {
-    myImg.src = "image1.jpg";
-  }
-});*/
